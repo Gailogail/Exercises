@@ -3,4 +3,9 @@ import unittest
 if __name__ == '__main__':
     suite = unittest.defaultTestLoader.discover('tests')
     runner = unittest.TextTestRunner()
-    runner.run(suite)
+    outcome = runner.run(suite)
+    if outcome.wasSuccessful():
+        sys.exit(0)
+    else:
+        print(len(outcome.failures())
+        sys.exit(1)
