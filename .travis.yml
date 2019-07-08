@@ -2,4 +2,4 @@ language: python
 python:
   - "3.6"
  
-script: run_tests.py
+script: python3 run_tests.py
