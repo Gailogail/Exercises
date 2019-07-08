@@ -8,5 +8,5 @@ if __name__ == '__main__':
     if outcome.wasSuccessful():
         sys.exit(0)
     else:
-        print(len(outcome.failures())
+        print(len(outcome.failures)
         sys.exit(1)
